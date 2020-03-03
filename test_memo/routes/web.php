@@ -24,3 +24,9 @@ Route::get('/','MemosController@index')->name('index');
 Route::get('new/memo','MemosController@newMemo')->name('newMemo');
 
 Route::post('/store','MemosController@store')->name('store');
+
+Route::get('/edit','MemosController@editMemo')->name('editMemo');
+
+Route::post('/updata','MemosController@update')->name('update');
+
+Route::get('/delete','MemosController@delete')->name('delete');
