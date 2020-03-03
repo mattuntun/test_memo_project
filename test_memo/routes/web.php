@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/','MemosController@index')->name('index');
+
+Route::get('new/memo','MemosController@newMemo')->name('newMemo');
+
+Route::post('/store','MemosController@store')->name('store');
