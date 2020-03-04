@@ -30,3 +30,5 @@ Route::get('/edit','MemosController@editMemo')->name('editMemo');
 Route::post('/updata','MemosController@update')->name('update');
 
 Route::get('/delete','MemosController@delete')->name('delete');
+
+Route::get('/test','MemosController@test')->name('test');
