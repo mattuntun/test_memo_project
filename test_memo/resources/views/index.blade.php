@@ -4,9 +4,21 @@
 
 @section('content')
 
+    
     <div class="text-right">
-        <a href="{{route('newMemo')}}" class="btn btn-outline-secondary btn-sm mt-4">メモ新規作成</a>
+        <a href="{{route('newMemo')}}" class="btn btn-outline-secondary btn-sm mt-4" id="btn">メモ新規作成</a>
     </div>
+
+    <script type="text/javascript">
+        var btn = document.getElementById('btn');
+
+
+        btn.addEventListener('click', function() {
+            alert("自由にメモを書いてください");
+        });
+
+    </script>
+
 
     <div class="container">
         <div class="row">
